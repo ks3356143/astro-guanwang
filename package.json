@@ -1,0 +1,25 @@
+{
+  "name": "astro-guanwang",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.1",
+    "astro": "^5.18.0",
+    "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.7.2"
+  }
+}
