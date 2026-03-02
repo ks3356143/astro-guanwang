@@ -1,0 +1,21 @@
+---
+import Navigation from "./Navigation.astro"
+import Menu from "./Menu.astro"
+---
+
+<header>
+	<nav>
+		<Menu />
+		<Navigation />
+	</nav>
+</header>
+
+<script>
+	const menu = document.querySelector(".menu")
+
+	menu?.addEventListener("click", () => {
+		// 在globals.css中使用.has当属性aria-expanded为'true'时候显示unset
+		const isExpended = menu.getAttribute("aria-expanded") === "false"
+		menu.setAttribute("aria-expanded", `${isExpended}`)
+	})
+</script>
