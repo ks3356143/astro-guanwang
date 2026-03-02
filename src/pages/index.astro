@@ -1,23 +1,9 @@
 ---
-import Footer from "@/components/Footer.astro"
-import Header from "@/components/Header.astro"
-import "@/styles/globals.css"
+import BaseLayout from "@/layouts/BaseLayout.astro"
+
 const pageTitle = "首页"
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<Header />
-		<h1>{pageTitle}</h1>
-
-		<Footer />
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<h2>我超棒的博客副标题</h2>
+</BaseLayout>
