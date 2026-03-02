@@ -1,11 +1,15 @@
 ---
 import Navigation from "./Navigation.astro"
 import Menu from "./Menu.astro"
+import ThemeIcon from "./ThemeIcon.astro"
 ---
 
 <header>
 	<nav>
-		<Menu />
+		<div>
+			<ThemeIcon />
+			<Menu />
+		</div>
 		<Navigation />
 	</nav>
 </header>
@@ -19,3 +23,10 @@ import Menu from "./Menu.astro"
 		menu.setAttribute("aria-expanded", `${isExpended}`)
 	})
 </script>
+
+<style>
+	div {
+		display: flex;
+		justify-content: center;
+	}
+</style>
